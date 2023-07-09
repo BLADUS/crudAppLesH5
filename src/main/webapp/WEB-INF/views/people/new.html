@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Форма создания нового человека</title>
+  <meta charset="UTF-8">
+  <title>Форма создания нового человека</title>
 </head>
 <body>
 <h1>Форма создания нового человека</h1>
-<form th:action="@{/people}" th:method="post" th:object="${person}">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" th:field="*{name}" required>
-    <input type="submit" value="Создать">
+<form th:action="@{/people}" th:method="post" th:object="${person}" accept-charset="UTF-8">
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name" th:field="*{name}" required>
+  <br>
+  <label for="name">Возраст:</label>
+  <input type="text" id="age" name="age" th:field="*{age}" required>
+  <br>
+  <label for="name">Email:</label>
+  <input type="text" id="email" name="email" th:field="*{email}" required>
+  <input type="submit" value="Создать">
 </form>
 </body>
 </html>

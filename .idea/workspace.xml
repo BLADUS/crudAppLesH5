@@ -9,23 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d657adee-68ec-48a3-a9fe-a968e1420acf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
+    <list default="true" id="d657adee-68ec-48a3-a9fe-a968e1420acf" name="Changes" comment="Отображение всех людей, отдельного человека, создание человека, изм. человека.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ProjectProg/Java/Spring/CrudApp",
+    "last_opened_file_path": "D:/ProjectProg/Java/h5/crudAppLes/src/main/webapp/WEB-INF/views/people",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +73,22 @@
     "spring.configuration.checksum": "218f50a925eeccce2be29c4c04d60469"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\webapp\WEB-INF\views\people" />
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\src\main\webapp\WEB-INF\views\people" />
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\java\org\example\controllers" />
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\java\org\example\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.models" />
+      <recent name="org.example.dao" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -179,6 +191,7 @@
       <workItem from="1688214972935" duration="82000" />
       <workItem from="1688291868978" duration="2474000" />
       <workItem from="1688294396931" duration="1301000" />
+      <workItem from="1688896490400" duration="1681000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
-    <title>Список людей</title>
+    <title>People List</title>
 </head>
 <body>
 <h1>Список людей</h1>
@@ -16,12 +15,17 @@
     </tr>
     </thead>
     <tbody>
+    <!-- Итерация по списку людей и вывод информации о каждом человеке -->
     <tr th:each="person : ${people}">
         <td th:text="${person.getId()}"></td>
         <td th:text="${person.getName()}"></td>
-        <td><a th:href="@{/people/{id}(id=${person.getId()})}">Данные о человеке</a></td>
+        <!-- Создание ссылки на страницу человека -->
+        <td><a th:href="@{/people/{id}(id=${person.getId()})}">Просмотреть</a></td>
     </tr>
     </tbody>
 </table>
+
+<!-- Кнопка создания нового человека -->
+<a th:href="@{/people/new}">Создать человека</a>
 </body>
 </html>

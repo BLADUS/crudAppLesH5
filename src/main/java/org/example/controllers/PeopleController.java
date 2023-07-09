@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @author Vladislav Osada
- * @date 01.07.2023 13:37
+ * @date 08.06.2023 0:46
  */
 @Controller
 @RequestMapping("/people")
@@ -54,6 +54,12 @@ public class PeopleController {
     @PatchMapping("/{id}")
     public String update(@ModelAttribute("person") Person person, @PathVariable("id") int id) {
         personDAO.update(id, person);
+        return "redirect:/people";
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable("id") int id) {
+        personDAO.delete(id);
         return "redirect:/people";
     }
 }

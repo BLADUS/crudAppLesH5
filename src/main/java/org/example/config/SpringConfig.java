@@ -14,7 +14,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 /**
  * @author Vladislav Osada
- * @date 01.07.2023 13:26
+ * @date 08.06.2023 0:39
  */
 @Configuration
 @ComponentScan("org.example")
@@ -45,11 +45,11 @@ public class SpringConfig implements WebMvcConfigurer {
         templateEngine.setEnableSpringELCompiler(true);
         return templateEngine;
     }
+
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
         resolver.setTemplateEngine(templateEngine());
-        resolver.setCharacterEncoding("UTF-8");
+        resolver.setCharacterEncoding("UTF-8"); // Установка кодировки UTF-8
         registry.viewResolver(resolver);
     }
 }
-

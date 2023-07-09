@@ -8,18 +8,19 @@ import java.util.List;
 
 /**
  * @author Vladislav Osada
- * @date 01.07.2023 13:31
+ * @date 08.06.2023 1:12
  */
 @Component
 public class PersonDAO {
-    private static int  PEOPLE_COUNT;
-    private List<Person> people;
+    private static int PEOPLE_COUNT;
+    private final List<Person> people;
 
     {
         people = new ArrayList<Person>();
 
-        people.add(new Person(++PEOPLE_COUNT,"Демид"));
-        people.add(new Person(++PEOPLE_COUNT,"Иван"));
+        people.add(new Person(++PEOPLE_COUNT, "Владислав", 19,"vlad@mail.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Демид", 16, "demid@mail.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Иван", 17, "Ivan@mail.com"));
     }
 
     public List<Person> index() {
@@ -38,6 +39,12 @@ public class PersonDAO {
     public void update(int id, Person updatedPerson) {
         Person personToBeUpdated = show(id);
 
-        personToBeUpdated.setName((updatedPerson.getName()));
+        personToBeUpdated.setName(updatedPerson.getName());
+        personToBeUpdated.setAge(updatedPerson.getAge());
+        personToBeUpdated.setEmail(updatedPerson.getEmail());
+    }
+
+    public void delete(int id) {
+        people.removeIf(person -> person.getId() == id);
     }
 }

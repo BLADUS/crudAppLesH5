@@ -8,7 +8,7 @@ import javax.servlet.ServletException;
 
 /**
  * @author Vladislav Osada
- * @date 01.07.2023 13:27
+ * @date 08.06.2023 0:39
  */
 public class MySpringMvcDispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override

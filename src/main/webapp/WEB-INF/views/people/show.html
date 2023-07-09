@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Данные о человеке</title>
+  <meta charset="UTF-8">
+  <title>Person Details</title>
 </head>
 <body>
-<h1>Данные о человеке</h1>
 
 <div>
-  <h3>ID <span th:text="${person.getId()}"></span></h3>
-  <h3>Имя <span th:text="${person.getName()}"></span></h3>
+  <h3>ID: <span th:text="${person.getId()}"></span></h3>
+  <h3>Имя: <span th:text="${person.getName()}"></span></h3>
+  <h3>Возраст: <span th:text="${person.getAge()}"></span></h3>
+  <h3>Email: <span th:text="${person.getEmail()}"></span></h3>
+  <a th:href="@{/people/{id}/edit(id=${person.getId()})}">Редактировать</a>
+
+  <!-- Форма для удаления человека -->
+  <form th:action="@{/people/{id}/(id=${person.getId()})}" th:method="DELETE" onsubmit="return confirm('Вы уверены, что хотите удалить этого человека?')">
+    <input type="submit" value="Удалить">
+  </form>
+
 </div>
+
 </body>
 </html>

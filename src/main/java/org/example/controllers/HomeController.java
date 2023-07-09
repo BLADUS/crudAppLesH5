@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Vladislav Osada
- * @date 01.07.2023 14:16
+ * @date 09.06.2023 18:15
  */
 @Controller
 public class HomeController {
+
     private final PersonDAO personDAO;
 
     @Autowired
@@ -20,7 +21,7 @@ public class HomeController {
     }
 
     @RequestMapping("/")
-    public String index(Model model){
+    public String home(Model model) {
         model.addAttribute("people", personDAO.index());
 
         return "people/index";
