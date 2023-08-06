@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>Форма создания нового человека</title>
+    <meta charset="UTF-8">
+    <title>Форма создания нового человека</title>
 </head>
 <body>
 <h1>Форма создания нового человека</h1>
 <form th:action="@{/people}" th:method="post" th:object="${person}" accept-charset="UTF-8">
-  <label for="name">Имя:</label>
-  <input type="text" id="name" name="name" th:field="*{name}" required>
-  <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
-  <br>
-  <label for="age">Возраст:</label>
-  <input type="text" id="age" name="age" th:field="*{age}" required>
-  <div style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></div>
-  <br>
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email" th:field="*{email}" required>
-  <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
 
-  <input type="submit" value="Создать">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" th:field="*{name}">
+    <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+
+    <label for="age">Возраст:</label>
+    <input type="number" id="age" name="age" th:field="*{age}">
+    <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" th:field="*{email}">
+    <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+
+    <input type="submit" value="Создать">
 </form>
 </body>
 </html>

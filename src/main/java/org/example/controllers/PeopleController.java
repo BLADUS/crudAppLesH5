@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -14,6 +15,7 @@ import javax.validation.Valid;
  * @author Vladislav Osada
  * @date 08.06.2023 0:46
  */
+
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
@@ -42,12 +44,12 @@ public class PeopleController {
         return "people/new";
     }
 
+    @Validated
     @PostMapping()
-    public String create(@ModelAttribute("person") @Valid Person person ,
+    public String create(@ModelAttribute("person") @Valid Person person,
                          BindingResult bindingResult) {
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors())
             return "people/new";
-        }
 
         personDAO.save(person);
         return "redirect:/people";
@@ -59,11 +61,12 @@ public class PeopleController {
         return "people/edit";
     }
 
+    @Validated
     @PatchMapping("/{id}")
-    public String update(@ModelAttribute("person") @Valid Person person,BindingResult bindingResult ,@PathVariable("id") int id) {
-        if(bindingResult.hasErrors()){
+    public String update(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult,
+                         @PathVariable("id") int id) {
+        if (bindingResult.hasErrors())
             return "people/edit";
-        }
 
         personDAO.update(id, person);
         return "redirect:/people";

@@ -6,17 +6,25 @@ import javax.validation.constraints.*;
  * @author Vladislav Osada
  * @date 08.06.2023 1:10
  */
+
+
 public class Person {
+
     private int id;
+
     @NotEmpty(message = "Имя не должно быть пустым")
-    @Size(min = 2, max = 255, message = "Имя должно содержать от 2 до 255 символов")
-    @Pattern(regexp = "^[a-zA-Zа-яА-Я]+$", message = "В имени должны быть только буквы")
+    @Size(min = 2, max = 30, message = "Имя должно содержать от 2 до 30 символов")
+    @Pattern(regexp = "^[a-zA-Zа-яА-Я]+$", message = "Имя должно содержать только буквы")
     private String name;
-    @Min(value = 0, message = "Введите ваш действительный возраст")
+
+    @Min(value = 0,message = "Укажите правельный возраст")
     private int age;
+
     @NotEmpty(message = "Email не должен быть пустым")
-    @Email(message = "Введите правильное название вашего email")
+    @Email(message = "Введите валидный email")
     private String email;
+
+
 
     public Person(int id, String name, int age, String email) {
         this.id = id;

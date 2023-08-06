@@ -9,13 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d657adee-68ec-48a3-a9fe-a968e1420acf" name="Changes" comment="Приложение со всеми методами(get, post, patch, delete)">
+    <list default="true" id="d657adee-68ec-48a3-a9fe-a968e1420acf" name="Changes" comment="Валидация данных человека &#10;Подкл русский шрифт">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ProjectProg/Java/h5/crudAppLes/src/main/webapp/WEB-INF/views/people",
+    "last_opened_file_path": "D:/ProjectProg/Java/Spring/CrudApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,13 +71,18 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "218f50a925eeccce2be29c4c04d60469"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\resources" />
       <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\webapp\WEB-INF\views\people" />
-      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\src\main\webapp\WEB-INF\views\people" />
+      <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\java\org\example\dao" />
       <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\java\org\example\controllers" />
       <recent name="D:\ProjectProg\Java\h5\crudAppLes\src\main\java\org\example\config" />
     </key>
@@ -185,7 +196,9 @@
       <workItem from="1688214972935" duration="82000" />
       <workItem from="1688291868978" duration="2474000" />
       <workItem from="1688294396931" duration="1301000" />
-      <workItem from="1688896490400" duration="3479000" />
+      <workItem from="1688896490400" duration="5603000" />
+      <workItem from="1688995956664" duration="105000" />
+      <workItem from="1691275121799" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="Приложение со всеми методами(get, post, patch, delete)">
       <created>1688898240679</created>
@@ -194,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688898240679</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Валидация данных человека &#10;Подкл русский шрифт">
+      <created>1688900114224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688900114224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +233,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Приложение со всеми методами(get, post, patch, delete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Приложение со всеми методами(get, post, patch, delete)" />
+    <MESSAGE value="Валидация данных человека &#10;Подкл русский шрифт" />
+    <option name="LAST_COMMIT_MESSAGE" value="Валидация данных человека &#10;Подкл русский шрифт" />
   </component>
 </project>
